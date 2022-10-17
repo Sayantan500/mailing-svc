@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>Dear </p>
+<p th:text="${recipientName}">,<br/></p>
+<p th:text="${text}"><br/><br/></p>
+<p>This is the Notification Template.<br/></p>
+<p>Regards,<br/></p>
+<p>
+    <em th:text="${senderName}"></em> <br />
+</p>
+</body>
+</html>
