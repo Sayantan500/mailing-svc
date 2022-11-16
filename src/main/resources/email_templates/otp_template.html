@@ -1,16 +1,9 @@
     <!DOCTYPE html>
-    <html>
+    <html xmlns:th="http://www.w3.org/1999/xhtml">
         <head>
             <title>OTP Email Template</title>
         </head>
         <body>
-            <div style="text-align:center;display:block">
-                <img 
-                    src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPf3UkIg_L6HUaOEBG8e9W1upJLxicREpMg&usqp=CAU"
-                    width = "500" 
-                    height = "300"
-                />
-            </div>
 
             <div style = "margin-left : 32%">
                 <h3 style = "font-size : 130%">
@@ -21,24 +14,6 @@
                     <br/><br/>
                     Your Verification Code is <b style = "font-size : 140%"> <span th:text="${message}"></span> </b>.
                 </p>
-            </div>
-
-            <div align = "center">
-                <button 
-                    type = "submit"
-                    style = "
-                    background : #7ED958; 
-                    color : #FFFFFF;
-                    font-size : 18px;
-                    width : 25%; 
-                    height : 40px; 
-                    margin-top : 5%;
-                    border-radius : 20px
-                    "
-                    onclick = "window.open('https://www.google.co.in')"
-                    >
-                    <b>Click here to verify</b>
-                </button>
             </div>
 
             <div style = "margin-left : 32%;margin-top : 2%; justify-content : center ">
