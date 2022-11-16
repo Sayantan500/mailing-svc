@@ -1,7 +1,7 @@
-FROM eclipse-temurin:11-jdk-alpine
+FROM amazoncorretto:11-alpine
 WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 RUN ./mvnw dependency:go-offline
 COPY src ./src
-CMD ["./mvnw", "spring-boot:run"]
+ENTRYPOINT ["./mvnw", "spring-boot:run"]
